@@ -1,0 +1,256 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-center .logo{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
+.header-center .icons span{
+    margin: 10px 5px;
+}
+.mode .dark{
+    display: none;
+    color: #000;
+}
+.switchmode .dark{
+    display: block;
+}
+.switchmode .light{
+    display: none;
+}
+.toggle-bar{
+    color: #000;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 0px 0 rgba(0, 0, 0.7, 0.1);
+}
+.nav-wrap{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.show-navwrap{
+    height:  230px;
+}
+nav{
+    padding: 10px 0;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: block;
+    margin: 20px 0 20px 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color: #ff69b4;
+}.navbar span{
+    font-size: 16px;
+}
+/*styling intro section*/
+.section{
+    padding-top: 60px;
+}
+.heading{
+    line-height: 0.17rem;
+    text-align: center;
+}
+.intro{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image-container{
+    width: 200px;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+/*styling about section*/
+.about{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about span{
+    text-align: center;
+}
+.about .image-container{
+    margin: 0 auto ;
+}
+.about .image-container img{
+    border-radius: 50%;
+}
+/*styling skills section*/
+.skills{
+    display: grid;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.my-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 2em;
+}
+.my-skills > span{
+    padding: 10px;
+    border: 1px solid grey;
+}
+/*styling portfolio section*/
+.portfolio{
+    display: grid;
+    justify-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.my-portfolio{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-gap: 2em;
+}
+.my-portfolio > span{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*styling contact section*/
+.contact-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ .contact{
+    display: block;
+    line-height: 0;
+    font-size: 10px;
+    margin: 30px 0;
+}
+fieldset{
+    border: none;
+}
+input{
+    display: block;
+    margin: 10px 0;
+    padding: 5px 25px;
+}
+/*styling footer*/
+footer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    background-color: #ccc;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.scroll-top a{
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width:768px){
+    .navbar{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 0px 0 rgba(0, 0, 0.7, 0.1);
+    }
+    .nav-wrap{
+        height: auto;
+        margin: 0 auto 
+    }
+    .toggle-bar{
+        display: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0 20px 0 20px;
+    }
+.header-center .icons{
+    position: absolute;
+    right: 30px;
+}
+.mode span{
+    position: absolute;
+    right: 30px;
+    top: 24px;
+    font-size: 18px;
+}
+/*styling intro section*/
+/*.section{
+    height: 100vh;
+}*/
+.intro{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.image-container{
+    width: 400px;
+}
+/*styling about section*/
+.about article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.about .text-about{
+    width: 600px;
+}
+.about .image-container{
+    margin: unset;
+}
+.about .image-container img{
+    border-radius: unset;
+}
+/*styling skills section*/
+.my-skills{
+    grid-template-columns: repeat(3, 100px);
+}
+/*styling portfolio section*/
+.my-portfolio{
+    grid-template-columns: repeat(3, 300px);
+}
+/*styling contact section*/
+.my-contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+}

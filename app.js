@@ -11,18 +11,23 @@ navLinks.forEach(function(link){
         eachLink.classList.remove("show-navwrap");
     })
 });
-
-//show light or dark mode
-const body = document.querySelector(".body-color");
-const switchMode = document.querySelector(".mode");
-switchMode.addEventListener("click", function(){
-    if(!switchMode.classList.contains("switchmode")){
-        switchMode.classList.add("switchmode");
-        body.style.backgroundColor="black";
-        body.style.color="white";
-    }else{
-        switchMode.classList.remove("switchmode");
-        body.style.backgroundColor="white";
-        body.style.color="black";
-    }
+//dark mode
+const light = document.querySelector(".light");
+const dark = document.querySelector(".dark");
+light.addEventListener("click", function(){
+    document.body.classList.add("switchmode");
 });
+dark.addEventListener("click", function(){
+    document.body.classList.remove("switchmode");
+});
+//scroll top
+/*const topLink = document.querySelector(".scroll-top");
+window.addEventListener("scroll", function(){
+    const scrollHeight = window.pageYOffset;
+    if(scrollHeight < 500){
+        topLink.classList.add("showtop");
+    }else{
+    }
+    console.log(scrollHeight);
+})
+console.log(topLink)*/

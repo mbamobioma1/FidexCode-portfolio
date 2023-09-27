@@ -12,6 +12,9 @@ body{
     --black: #282c35;
     
 }
+.mode span{
+    margin-right: 10px;
+}
 .switchmode{
     --white: #282c35;
     --black: #f9f9f9;
@@ -188,12 +191,14 @@ input{
     margin: 10px 0;
     padding: 5px 25px;
     border: 2px;
+    color: var(--black);
     border: 1px solid var(--green);
     outline: var(--pink);
     background-color: transparent;
 }
 textarea{
     border: 1px solid var(--green);
+    color: var(--black);
     outline: var(--pink);
     border-radius: 2px;
     background-color: transparent;
@@ -268,9 +273,6 @@ footer{
     font-size: 18px;
 }
 /*styling intro section*/
-/*.section{
-    height: 100vh;
-}*/
 .intro{
     display: flex;
     flex-direction: row-reverse;
